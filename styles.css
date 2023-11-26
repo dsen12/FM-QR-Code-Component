@@ -58,7 +58,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  gap: 24px;
+  row-gap: 24px;
 }
 
 .code-component img {
