@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-body {
+body, p {
   margin: 0;
   padding: 0;
 }
@@ -25,7 +25,66 @@ a {
 
 :root {
   --White: hsl(0, 0%, 100%);
-  --Light gray: hsl(212, 45%, 89%);
-  --Grayish blue: hsl(220, 15%, 55%);
-  --Dark blue: hsl(218, 44%, 22%);
+  --Light-gray: hsl(212, 45%, 89%);
+  --Grayish-blue: hsl(220, 15%, 55%);
+  --Dark-blue: hsl(218, 44%, 22%);
+  --Royal-blue: hsla(216, 95%, 58%, 1);
+  --Royal-blue-shade: hsla(216, 100%, 61%, 1);
+  --FontFamily-Outfit: "Outfit", sans-serif;
+}
+
+p {
+  font-size: 15px;
+}
+
+body {
+  background-color: var(--Light-gray);
+  font-family: var(--FontFamily-Outfit);
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.component {
+  width: 320px;
+  height: 497px;
+  background-color: var(--White);
+  border-radius: 20px;
+  box-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 0.05);
+  padding: 16px 16px 40px 16px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.code-component img {
+  border-radius: 10px;
+}
+
+.text-component {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 16px;
+}
+
+.heading1 {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: normal;
+  font-style: normal;
+  color: var(--Dark-blue);
+  width: 288px;
+}
+.heading2 {
+  font-weight: 400;
+  width: 256px;
+  margin: 0 auto;
+  color: var(--Grayish-blue);
+  letter-spacing: 0.188px;
 }
